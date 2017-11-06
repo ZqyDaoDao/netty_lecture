@@ -14,7 +14,10 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
     //构造了一个hello word的返回
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {
-       if(msg instanceof HttpRequest){
+       System.out.println(msg.getClass());
+       System.out.println(ctx.channel().remoteAddress());
+       Thread.sleep(8000);
+        if(msg instanceof HttpRequest){
            HttpRequest httpRequest = (HttpRequest)msg;
 
            System.out.println("请求方法名：" +httpRequest.method());
@@ -31,6 +34,7 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
            response.headers().set(HttpHeaderNames.CONTENT_TYPE,"text/plain");
            response.headers().set(HttpHeaderNames.CONTENT_LENGTH,content.readableBytes());
            ctx.writeAndFlush(response);
+           ctx.channel().close();
        }
 
     }
