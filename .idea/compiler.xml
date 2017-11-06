@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="_main" target="1.8" />
+      <module name="_test" target="1.8" />
+      <module name="com.netty_main" target="1.8" />
+      <module name="com.netty_test" target="1.8" />
+      <module name="ne_main" target="1.8" />
+      <module name="ne_test" target="1.8" />
+      <module name="nerry_main" target="1.8" />
+      <module name="nerry_test" target="1.8" />
+      <module name="nettty__main" target="1.8" />
+      <module name="nettty__test" target="1.8" />
+      <module name="nettty_le_main" target="1.8" />
+      <module name="nettty_le_test" target="1.8" />
+      <module name="nettty_leture_main" target="1.8" />
+      <module name="nettty_leture_test" target="1.8" />
+      <module name="nettty_main" target="1.8" />
+      <module name="nettty_test" target="1.8" />
+      <module name="Study-ne_main" target="1.8" />
+      <module name="Study-ne_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
