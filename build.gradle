@@ -12,4 +12,8 @@ repositories {
 
 dependencies {
     compile group: 'io.netty', name: 'netty-all', version: '4.1.16.Final'
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.4.0'
+    compile group: 'org.jboss.marshalling', name: 'jboss-marshalling-river', version: '2.0.2.Final'
+
+
 }
